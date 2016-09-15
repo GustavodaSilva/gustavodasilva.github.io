@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>Homepage - Semantic</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.min.css">
+
+    <!-- Script -->
+    <script src="./assets/js/jquery-3.1.0.min.js"></script>
+    <script src="./assets/js/semantic.min.js"></script>
+    <script>
+        $(document)
+            .ready(function() {
+
+                // fix menu when passed
+                $('.masthead')
+                    .visibility({
+                        once: false,
+                        onBottomPassed: function() {
+                            $('.fixed.menu').transition('fade in');
+                        },
+                        onBottomPassedReverse: function() {
+                            $('.fixed.menu').transition('fade out');
+                        }
+                    });
+
+                // create sidebar and attach to menu open
+                $('.ui.sidebar')
+                    .sidebar('attach events', '.toc.item');
+
+            });
+    </script>
+</head>
+
+<body>
+    <div class="ui inverted blue large top fixed hidden menu">
+        <div class="ui container">
+            <div class="right menu">
+                <a class="active item" href="#home">Home</a>
+                <a class="item" href="#about">Sobre Mim</a>
+                <a class="item" href="#contact">Contato</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui vertical inverted sidebar menu">
+        <a class="active item" href="#home">Home</a>
+        <a class="item" href="#about">Sobre Mim</a>
+        <a class="item" href="#contact">Contato</a>
+    </div>
+
+
+    <div class="pusher">
+        <div class="ui inverted blue vertical masthead center aligned segment" id="home">
+            <div class="ui container secondary menu">
+                <nav role="navigation" class="ui large secondary inverted blue right menu">
+                    <a class="active item" href="#home">Home</a>
+                    <a class="item" href="#about">Sobre Mim</a>
+                    <a class="item" href="#contact">Contato</a>
+                </nav>
+            </div>
+            <div class="ui text spaced container center aligned">
+                <h1 class="ui inverted header">Oi, eu sou o Gustavo!</h1>
+                <h2>Técnico em mecatrônica, estudante de Ciência da Computação e mais um maluco da tecnologia</h2>
+
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="ui vertical stripe segment" id="about">
+            <div class="ui text container">
+                <h3 class="ui centered header">Já me conhece?</h3>
+                <p>Tenho 21 anos, sou de São José dos Campos no interior de SP.</br>
+                    Sou técnico em Mecatrônica desde 2012, estudante de Ciência da Computação desde 2015 e Gamer desde sei lá quando.</p>
+                <h4 class="ui horizontal header divider" />
+                <h3 class="ui centered header">O que eu sei fazer?</h3>
+                <p>Além de dormir e jogar eu aprendi algumas coisinhas:</p>
+                <div class="ui celled relaxed horizontal list">
+                    <div class="item">
+                        <img class="ui mini image" src="./assets/images/html5.png">
+                        <div class="content">
+                            HTML
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="ui mini image" src="./assets/images/css3.png">
+                        <div class="content">
+                            CSS
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="ui mini image" src="./assets/images/js.png">
+                        <div class="content">
+                            JavaScript
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="ui mini image" src="./assets/images/java.png">
+                        <div class="content">
+                            Java
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="ui mini image" src="./assets/images/php.png">
+                        <div class="content">
+                            PHP
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="ui mini image" src="./assets/images/mysql.png">
+                        <div class="content">
+                            MySql
+                        </div>
+                    </div>
+                </div>
+                <h4 class="ui horizontal header divider" />
+                <h3 class="ui centered header" id="contact">E ai, curtiu?</h3>
+                <p>Então é só me mandar um e-mail, mandar DM no twitter ou alguma coisa assim</p>
+                <ul>
+                    <li><b>E-mail:</b>&nbsp;gusxavierlimo@gmail.com</li>
+                    <li><b>Twitter:</b>&nbsp;@Guzz_daSilva</li>
+                    <li><b>Instagram:</b>&nbsp;@guzz_dasilva</li>
+                    <li><b>Github:</b>&nbsp;GustavodaSilva</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="ui inverted vertical footer segment">
+        <div class="ui center aligned container">
+            <div class="ui horizontal inverted small divided link list">
+                <h4>Desenvolvido por mim mesmo usando Semantic-UI</h4>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
