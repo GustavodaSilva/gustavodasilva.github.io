@@ -13,55 +13,10 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-
-    <!-- Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js"></script>
-    <script>
-        $('.special.cards .image').dimmer({
-            on: 'hover'
-        });
-    </script>
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-74318367-2', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <script>
-        $(document)
-            .ready(function() {
-
-                // Fixa o menu após o scroll
-                $('.masthead')
-                    .visibility({
-                        once: false,
-                        onBottomPassed: function() {
-                            $('.fixed.menu').transition('fade in');
-                        },
-                        onBottomPassedReverse: function() {
-                            $('.fixed.menu').transition('fade out');
-                        }
-                    });
-
-                // create sidebar and attach to menu open
-                $('.ui.sidebar')
-                    .sidebar('attach events', '.toc.item');
-            });
-    </script>
 </head>
 
 <body>
+  <!--Fixed Menu-->
     <div class="ui inverted large top fixed hidden menu">
         <div class="ui container">
             <div class="right menu">
@@ -88,7 +43,7 @@
                     <span></span>
                 </div>
                 <h1 class="ui inverted header">Oi, eu sou o Gustavo!</h1>
-                <h2>Técnico em mecatrônica e estudante do 3º ano de Ciência da Computação</h2>
+                <h2>Técnico em mecatrônica e estudante de Ciência da Computação</h2>
             </div>
         </div>
 
@@ -96,73 +51,135 @@
         <div class="ui vertical stripe segment" id="about">
             <div class="ui text container">
                 <h3 class="ui centered header">Já me conhece?</h3>
-                <p>Tenho 21 anos, sou de São José dos Campos no interior de SP.<br/> Sou técnico em Mecatrônica desde 2012, estudante de Ciência da Computação desde 2015 e Gamer desde sei lá quando.</p>
+                <p>Tenho 22 anos, sou de São José dos Campos no interior de SP.<br/> Sou técnico em Mecatrônica desde 2012 e curso Ciência da Computação desde 2015.</p>
                 <h4 class="ui horizontal header divider" />
-                <h3 class="ui centered header">O que eu sei fazer?</h3>
-                <p>Além de dormir e jogar eu aprendi algumas coisinhas:</p>
-                <!--<div class="ui grid">
-                  <div class="two column row">
-                    <div class="column">
+                <h3 class="ui centered header">O que eu estou aprendendo?</h3>
+                <div class="ui special cards">
                     <div class="card">
-                        <img src="img_avatar.png" alt="Avatar" style="width:100%">
+                        <div class="blurring dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <h1>HTML</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./assets/images/html5.png" class="cardimage">
+                        </div>
                     </div>
-                    </div>
-                    <div class="column">
                     <div class="card">
-                        <img src="img_avatar.png" alt="Avatar" style="width:100%">
-                    </div>
-                    </div>
-                  </div>
-                  <div class="two column row">
-                    <div class="column">
-                    </div>
-                    <div class="column">
-                    </div>
-                  </div>-->
-                  <div class="ui celled relaxed horizontal list">
-                    <div class="item">
-                        <img class="ui mini image" src="./assets/images/html5.png">
-                        <div class="content">
-                            HTML
+                        <div class="blurring dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <h1>CSS</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./assets/images/css3.png" class="cardimage">
                         </div>
                     </div>
-                    <div class="item">
-                        <img class="ui mini image" src="./assets/images/css3.png">
-                        <div class="content">
-                            CSS
+                    <div class="card">
+                        <div class="blurring dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <h1>JavaScript</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./assets/images/js.png" class="cardimage">
                         </div>
                     </div>
-                    <div class="item">
-                        <img class="ui mini image" src="./assets/images/js.png">
-                        <div class="content">
-                            JavaScript
+                    <div class="card">
+                        <div class="blurring dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <h1>Java</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./assets/images/java.png" class="cardimage">
                         </div>
                     </div>
-                    <div class="item">
-                        <img class="ui mini image" src="./assets/images/java.png">
-                        <div class="content">
-                            Java
+                    <div class="card">
+                        <div class="blurring dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <h1>C#</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./assets/images/csharp.png" class="cardimage">
                         </div>
                     </div>
-                    <div class="item">
-                        <img class="ui mini image" src="./assets/images/php.png">
-                        <div class="content">
-                            PHP
+                    <div class="card">
+                        <div class="blurring dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <h1>ASP.NET</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./assets/images/dotnet.png" class="cardimage">
                         </div>
                     </div>
-                    <div class="item">
-                        <img class="ui mini image" src="./assets/images/mysql.png">
-                        <div class="content">
-                            MySql
+                    <div class="card">
+                        <div class="blurring dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <h1>PHP</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./assets/images/php.png" class="cardimage">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="blurring dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <h1>GIT</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./assets/images/git.png" class="cardimage">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="blurring dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <h1>MySql</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./assets/images/mysql.png" class="cardimage">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="blurring dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <h1>Sql Server</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./assets/images/sql.png" class="cardimage">
                         </div>
                     </div>
                 </div>
-                <h3 class="ui centered header" id="contact">E ai, curtiu?</h3>
-                <p>Então é só me mandar um e-mail, mandar DM no twitter ou alguma coisa assim</p>
+                <h3 class="ui centered header" id="contact">Quer fazer contato?</h3>
                 <ul>
                     <li><b>E-mail:</b>&nbsp;gusxavierlimo@gmail.com</li>
                     <li><b>Twitter:</b>&nbsp;@Guzz_daSilva</li>
-                    <li><b>Instagram:</b>&nbsp;@guzz_dasilva</li>
                     <li><b>Github:</b>&nbsp;GustavodaSilva</li>
                 </ul>
             </div>
@@ -174,10 +191,36 @@
     <div class="ui inverted vertical footer segment">
         <div class="ui center aligned container">
             <div class="ui horizontal inverted small divided link list">
-                <h4>Desenvolvido por mim mesmo usando Semantic-UI</h4>
+                <h4>Desenvolvido utilizando o framework Semantic-UI</h4>
             </div>
         </div>
     </div>
 </body>
+
+<!-- Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js"></script>
+<script>
+    $('.special.cards .image').dimmer({
+        on: 'hover'
+    });
+</script>
+<script>
+    $(document)
+        .ready(function() {
+
+            // Fixa o menu após o scroll
+            $('.masthead')
+                .visibility({
+                    once: false,
+                    onBottomPassed: function() {
+                        $('.fixed.menu').transition('fade in');
+                    },
+                    onBottomPassedReverse: function() {
+                        $('.fixed.menu').transition('fade out');
+                    }
+                });
+        });
+</script>
 
 </html>
