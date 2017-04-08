@@ -1,7 +1,7 @@
 body {
     font-family: 'Raleway', sans-serif;
-    background: -webkit-linear-gradient(0deg, rgb(255, 255, 255), rgb(236, 233, 230));
-    background: linear-gradient(0deg, rgb(255, 255, 255), rgb(236, 233, 230));
+    background: -webkit-linear-gradient(0deg, #ffffff, #ECE9E6);
+    background: linear-gradient(0deg, #ffffff, #ECE9E6);
     margin-right: auto;
     margin-left: auto;
     font-size: 25px;
@@ -23,6 +23,7 @@ body {
     font-size: 50px;
 }
 
+/* Estilo da imagem de apresentação*/
 .box {
     margin-right: auto;
     margin-left: auto;
@@ -36,6 +37,7 @@ body {
     max-height: 100%
 }
 
+/* Estilo dos titulos */
 .subtitle {
     font-family: 'Amatic SC', cursive;
     text-align: center;
@@ -46,6 +48,7 @@ body {
   text-align: center;
 }
 
+/* Estilo dos cards */
 .second-line{
   margin-top: 1%;
 }
@@ -70,81 +73,93 @@ body {
 }
 
 .card.html{
-  border-color: #e67e22;
+  border-color: #E44D26;
 }
 
 .card.html:hover{
-  background-color: #e67e22;
+  border-color: #000000;
+  background-color: #E44D26;
 }
 
 .card.css{
-  border-color: #3498db;
+  border-color: #3357C2;
 }
 
 .card.css:hover{
-  background-color: #3498db;
+  border-color: #000000;
+  background-color: #3357C2;
 }
 
 .card.js{
-  border-color: #f1c40f;
+  border-color: #EDF700;
 }
 
 .card.js:hover{
-  background-color: #f1c40f;
+  border-color: #000000;
+  background-color: #EDF700;
 }
 
 .card.java{
-  border-color: #c0392b;
+  border-color: #F4001C;
 }
 
 .card.java:hover{
-  background-color: #c0392b;
+  border-color: #000000;
+  background-color: #F4001C;
 }
 
 .card.csharp{
-  border-color: #8e44ad;
+  border-color: #68217A;
 }
 
 .card.csharp:hover{
-  background-color: #8e44ad;
+  border-color: #000000;
+  background-color: #68217A;
 }
 
 .card.aspnet{
-  border-color: #2980b9;
+  border-color: #2E64C3;
 }
 
 .card.aspnet:hover{
-  background-color: #2980b9;
+  border-color: #000000;
+  background-color: #2E64C3;
 }
 
 .card.php{
-  border-color: #9b59b6;
+  border-color: #795EAD;
 }
 
 .card.php:hover{
-  background-color: #9b59b6;
+  border-color: #000000;
+  background-color: #795EAD;
 }
 
 .card.git{
-  border-color: #e74c3c;
+  border-color: #F05033;
 }
 
 .card.git:hover{
-  background-color: #e74c3c;
+  border-color: #000000;
+  background-color: #F05033;
 }
 
 .card.mysql{
-  border-color: #f39c12;
+  border-color: #E48E00;
 }
 
 .card.mysql:hover{
-  background-color: #f39c12;
+  border-color: #000000;
+  background-color: #E48E00;
 }
 
 .card.sqlserver{
-  border-color: #bdc3c7;
+  border-color: #A3A4A5;
 }
 
 .card.sqlserver:hover{
-  background-color: #bdc3c7;
+  border-color: #000000;
+  background-color: #A3A4A5;
 }
+
+/* Estilo do contato */
